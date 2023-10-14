@@ -1,6 +1,5 @@
 import nodemailer from 'nodemailer';
-import dotenv from 'dotenv';
-dotenv.config();
+
 
 export const sendEmail = async (req, res) => {
     const { name, email, message, contact } = req.body;
@@ -8,7 +7,7 @@ export const sendEmail = async (req, res) => {
     const transporter = nodemailer.createTransport({
         host: 'smtp.gmail.com',
         port: 465,
-        secure: true,
+        secure: false,
         auth: {
             user: process.env.GOOGLE_CLIENT_USER, // Usando a variável de ambiente
             pass: process.env.GOOGLE_CLIENT_PASSWORD, // Usando a variável de ambiente
