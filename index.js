@@ -1,5 +1,5 @@
 import express from "express"
-import emailRoute from "../routes/emailRoute.js"
+import emailRoute from "./routes/emailRoute.js"
 import cors from "cors"
 
 
