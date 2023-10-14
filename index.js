@@ -11,4 +11,4 @@ const port = process.env.PORT || 3001;
 
 app.use("/", emailRoute)
 
-app.listen(8800, console.log("server run in port 8800")) 
+app.listen(port, console.log(`server run in port ${port}`)) 
