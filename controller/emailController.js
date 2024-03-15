@@ -20,7 +20,7 @@ export const sendEmail = async (req, res) => {
         from: email,
         to: process.env.GOOGLE_CLIENT_USER, // Usando a variável de ambiente
         subject: 'Nova mensagem de contato',
-        text: `Nome: ${name}\nEmail: ${email}\nMensagem: ${message}\nContato: ${contact}`,
+        text: `Nome: ${name}\n Email: ${email}\n Mensagem: ${message}\n Contato: ${contact}`,
     };
 
     try {
